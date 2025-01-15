@@ -1,0 +1,10 @@
+pandas
+numpy
+flask
+selenium
+pyautogui
+pyperclip
+watchdog
+python-dotenv
+jsonify
+flask-cors

@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "Auto VPN Changer",
+    "version": "1.0",
+    "description": "Change VPN automatically and excel file",
+    "permissions": ["storage", "activeTab", "scripting", "http://localhost:8080/"],
+    "action": {
+      "default_popup": "index.html",
+      "default_title": "Connect with one of our available VPN providers and apply filter in excel according to VPN."
+    }
+  }
