@@ -161,7 +161,7 @@ function App() {
 
       {/* Sections */}
       {activeSection === "VPN" && (
-        <div className="w-full max-w-sm p-8 bg-white border border-gray-200 overflow-y-auto max-h-64 shadow sm:p-6 dark:bg-gray-800 dark:border-gray-700 scroll-smooth">
+        <div className="w-full max-h-96 overflow-y-scroll overflow-x-hidden max-w-sm p-8 bg-white border border-gray-200 shadow sm:p-6 dark:bg-gray-800 dark:border-gray-700 scroll-smooth">
           <h5 className="mb-3 text-base font-semibold text-gray-900 md:text-xl dark:text-white">
             VPN Opener
           </h5>
@@ -268,24 +268,147 @@ function App() {
       {activeSection === "Pointer" && (
         <>
           <div className="mt-4">
+            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+              Mouse Configration
+            </h5>
             <p className="text-sm font-normal text-gray-500 dark:text-gray-400">
-              Connect with one of our available VPN providers and apply filter
-              in excel according to VPN.
+              In this section, you can adjust the X and Y coordinates of the
+              mouse pointer, allowing you to fine-tune its position on the
+              screen.
             </p>
+
+            <div className="overflow-y-scroll max-h-56 mt-4">
+              <h5 class="mb-2 mt-4 text-l font-semibold tracking-tight text-gray-900 dark:text-white">
+                Move to VPN App
+              </h5>
+
+              <div class="grid md:grid-cols-2 md:gap-6">
+                <div class="relative z-0 w-full mb-5 group">
+                  <input
+                    type="text"
+                    name="floating_first_name"
+                    id="floating_first_name"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    for="floating_first_name"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  >
+                    X
+                  </label>
+                </div>
+                <div class="relative z-0 w-full mb-5 group">
+                  <input
+                    type="text"
+                    name="floating_last_name"
+                    id="floating_last_name"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    for="floating_last_name"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  >
+                    Y
+                  </label>
+                </div>
+              </div>
+
+              <h5 class="mb-2 mt-4 text-l font-semibold tracking-tight text-gray-900 dark:text-white">
+                Geo location in Excel
+              </h5>
+
+              <div class="grid md:grid-cols-2 md:gap-6">
+                <div class="relative z-0 w-full mb-5 group">
+                  <input
+                    type="text"
+                    name="floating_first_name"
+                    id="floating_first_name"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    for="floating_first_name"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  >
+                    X
+                  </label>
+                </div>
+                <div class="relative z-0 w-full mb-5 group">
+                  <input
+                    type="text"
+                    name="floating_last_name"
+                    id="floating_last_name"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    for="floating_last_name"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  >
+                    Y
+                  </label>
+                </div>
+              </div>
+
+              <h5 class="mb-2 mt-4 text-l font-semibold tracking-tight text-gray-900 dark:text-white">
+                Click Location
+              </h5>
+
+              <div class="grid md:grid-cols-2 md:gap-6">
+                <div class="relative z-0 w-full mb-5 group">
+                  <input
+                    type="text"
+                    name="floating_first_name"
+                    id="floating_first_name"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    for="floating_first_name"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  >
+                    X
+                  </label>
+                </div>
+                <div class="relative z-0 w-full mb-5 group">
+                  <input
+                    type="text"
+                    name="floating_last_name"
+                    id="floating_last_name"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    for="floating_last_name"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  >
+                    Y
+                  </label>
+                </div>
+              </div>
+            </div>
 
             <div className="flex space-x-4 mt-4">
               <button
                 type="button"
                 className="px-3 py-2 text-xs font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
               >
-                Start
+                Save
               </button>
 
               <button
                 type="button"
                 className="px-3 py-2 text-xs font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800"
               >
-                Stop
+                Clear
               </button>
             </div>
           </div>

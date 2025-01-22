@@ -38,10 +38,7 @@ def change_vpn():
             pyautogui.press('enter')
             time.sleep(0.3)
             pyautogui.hotkey('win', 'down')  # Minimize window
-            time.sleep(0.2)
-            pyautogui.moveTo(265  , 1047)
-            time.sleep(0.3)
-            # THIS TO CHANGE (Filter Location)
+            time.sleep(0.5)
             pyautogui.moveTo(798   , 352)
            
             time.sleep(0.3)
